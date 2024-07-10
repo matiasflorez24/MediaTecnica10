@@ -1,0 +1,21 @@
+/******************************************************************************
+
+        Un cliente solicita una mini app en consola que imprima frases
+        de forma aleatoeia cada que es ejecutado
+
+*******************************************************************************/
+using System;
+class MiSegundoPeriodo {
+  static void Main() {
+    string[] frases = {
+        "Nunca es demasiado tarde para ser lo que podrias haber sido",
+        "Aprender de los errores es de sabios",
+        "La adversidad te hace reconocerte a ti mismo"};
+    //aleatorio
+    Random aleatorio = new Random();
+    int posicion = aleatorio.Next(0,2);
+    
+    // imprimir frases aleatoria
+    Console.WriteLine(frases[posicion]);
+    }
+  }
